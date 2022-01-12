@@ -9,7 +9,7 @@ import ProductStore from '../../../store/ProductStore'
 import { useDidMount } from '../../../utils/componentLifeCycle'
 
 
-const DeatilProduct = observer((props) => {
+const DetailProduct = observer((props) => {
   const { getProductDetail, updateProduct, productDetail } = useContext(ProductStore)
 
   const _getProductDetail = async () => {
@@ -72,4 +72,4 @@ const DeatilProduct = observer((props) => {
   )
 })
 
-export default DeatilProduct
+export default DetailProduct

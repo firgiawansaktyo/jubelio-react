@@ -14,7 +14,7 @@ class ProductStore {
 
     @action getProductDetail = async (param) => {
         const getData = await ROOT_URL.get(`getProductDetail/${param}`)
-        this.productDetail = getData.data.data
+        this.productDetail = getData.data.data[0]
 
         return getData.data
     }
